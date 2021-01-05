@@ -30,6 +30,7 @@ public:
 	bool IsGameOver();
 
 private:
+	//pointer as a member variable. Copy and move constructor need to be defined.
 
 	enum { POS_FREE, POS_FILLED };			// POS_FREE = free position of the board; POS_FILLED = filled position of the board
 	int mBoard[BOARD_WIDTH][BOARD_HEIGHT];	// Board that contains the pieces

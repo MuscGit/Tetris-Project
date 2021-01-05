@@ -2,6 +2,7 @@
 // Includes
 
 #include "Pieces.h""
+//Can't these 2 be const static elements of the class?
 
 // Pieces definition
 //0: "no block", 1:"normal block", 2:"pivot block".
@@ -303,7 +304,7 @@ int Pieces::GetBlockType(int pPiece, int pRotation, int pX, int pY) {
 int Pieces::GetXInitialPosition(int pPiece, int pRotation) {
     return mPiecesInitialPosition[pPiece][pRotation][0];
 }
-int Pieces::GetyInitialPosition(int pPiece, int pRotation) {
+int Pieces::GetYInitialPosition(int pPiece, int pRotation) {
     return mPiecesInitialPosition[pPiece][pRotation][1];
 }
 
